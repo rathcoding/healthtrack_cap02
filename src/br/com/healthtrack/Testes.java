@@ -22,8 +22,6 @@ public class Testes {
 		
 		List<RegPeso> pesos = pesoDAO.getAll();
 		
-		System.out.println( "id | data | peso");
-
 		for (RegPeso reg: pesos) {
 			System.out.println(reg.toString());			
 		}

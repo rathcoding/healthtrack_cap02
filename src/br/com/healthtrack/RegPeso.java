@@ -2,6 +2,8 @@ package br.com.healthtrack;
 
 import java.util.Date;
 
+// Entidade a ser perstida no Banco de Dados
+
 public class RegPeso {
 	private int id;
 	private Date data;

@@ -15,7 +15,15 @@ public class PesoDAO {
 	}
 	
 	public List<RegPeso> getAll(){
-		return this.fakeDB; // Simula um SELECT * na tabela de Registro de Pesos
+		
+		// Simula um SELECT * na tabela de Registro de Pesos e preparo de lista para retorno
+		
+		List<RegPeso> lista = new ArrayList<RegPeso>(); // Nova Lista para armazenar os registros recuperados do "SELECT *"
+		
+		for (RegPeso peso : this.fakeDB) { // Simulando a leitura registro-a-registro do retorno do "SELECT *"
+			lista.add(peso);
+		}
+		return lista; // Simula um SELECT * na tabela de Registro de Pesos
 	}
 	
 }
